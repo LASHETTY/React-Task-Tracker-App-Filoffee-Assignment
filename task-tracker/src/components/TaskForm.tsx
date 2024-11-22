@@ -4,7 +4,7 @@ import { Task, TaskStatus } from '../types/Task';
 
 interface TaskFormProps {
     onSubmit: (task: Omit<Task, 'id'>) => void;
-    initialTask?: Task;
+    initialTask?: Task | null;
     onCancel?: () => void;
 }
 
